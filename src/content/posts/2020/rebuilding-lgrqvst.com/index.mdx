@@ -1,0 +1,37 @@
+---
+title: Re-Building Lgrqvst.com, Again
+subtitle:
+date: 2020-03-08T21:28:00+09:00
+draft: false
+language: en
+categories:
+  - Web Development
+tags:
+  - lgrqvst.com
+  - rebuilding
+comments: true
+headerImgSrc:
+headerImgAlt:
+headerImgCredit:
+headerImgCreditLink:
+---
+
+Well, it's been a few years since the last redesign and almost a year since the last post here. Time for another rebuild, I guess.
+
+It's not that I didn't like working with Hugo. It was fine. Fast and easy to work with. But at work, I've been working more and more with [Gatsby](https://www.gatsbyjs.org/), and I wanted to make the shift here as well. I'm also a lot more comfortable with JavaScript than I am with Go, and so it feels a lot more flexible overall this way.
+
+I don't really have a lot to say about this design, truth be told. I think this is the fourth or fifth revision of a Gatsby version of the site, and I finally feel more or less ok with how it looks and works. There are still a [few things left to tackle](/todo) to bring the site to completion, and I'm going to try to get around to do that in the coming months. For now, I think it's good enough to put online, which will take some of the pressure off and let me focus more on other things than just building the new site.
+
+## Goals
+
+Before I started designing and building the site I knew that there were two things I wanted to include/implement:
+
+1. I wanted to use an easy-to-use grid-based system to be able to control the width of images and other elements that appear in blog posts and on pages.
+
+2. I wanted the user to be able to change the theme of the site according to their preferences. Initially I only pictured changing between a light and dark mode, but this feature suffered a bit of mission creep and now here we are with texture and hue control as well. I haven't decided yet if I'm going to tone it down a bit in some future update.
+
+## Technology
+
+For building the site itself I used React and Gatsby, with [Styled Components](https://styled-components.com/) for styling and [MDX](https://mdxjs.com/) for the content.
+
+For the hosting I'm again using [Netlify](https://www.netlify.com/). I seriously love this service, and cannot recommend it enough.
