@@ -23,9 +23,6 @@ const PostTemplate = ({ data: { mdx } }) => {
     categories,
     tags,
   } = frontmatter
-  // const title = "Test"
-
-  console.log(date, categories, tags)
 
   return (
     <Page
