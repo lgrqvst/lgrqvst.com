@@ -298,6 +298,7 @@ const GlobalStyles = createGlobalStyle`
     code {
       border-radius: 0.1em;
       background:  var(--flush);
+      font-size: 0.875em;
       box-shadow: 0.1rem 0.1rem 0 var(--flush),-0.1rem 0.1rem 0 var(--flush),0.1rem -0.1rem 0 var(--flush),-0.1rem -0.1rem 0 var(--flush);
     }
 
@@ -313,6 +314,7 @@ const GlobalStyles = createGlobalStyle`
 
       code {
         background: none;
+        font-size: 1em;
         box-shadow: none;
       }
     }
