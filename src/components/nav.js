@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import styled from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 import { hideVisually } from "polished"
 
 const Nav = () => {
@@ -81,6 +81,11 @@ const Nav = () => {
           </li>
         </ul>
       </NavElement>
+      <Overlay
+        className={open ? "is-open" : ""}
+        onClick={() => setOpen(!open)}
+      />
+      {open && <FreezeBody />}
     </>
   )
 }
@@ -288,5 +293,35 @@ const NavElement = styled.nav`
         }
       }
     }
+  }
+`
+
+const Overlay = styled.div`
+  display: none;
+
+  @media (max-width: 48rem) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(1.5rem);
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0s 0.25s, opacity 0.25s;
+
+    &.is-open {
+      transform: translateX(0);
+      opacity: 1;
+      transition: transform 0s, opacity 0.25s;
+    }
+  }
+`
+
+const FreezeBody = createGlobalStyle`
+  body {
+    overflow: hidden;
   }
 `
