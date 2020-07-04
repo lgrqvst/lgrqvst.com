@@ -298,6 +298,7 @@ const GlobalStyles = createGlobalStyle`
     code {
       border-radius: 0.1em;
       background:  var(--flush);
+      font-family: "Fira Code", monospace;
       font-size: 0.875em;
       box-shadow: 0.1rem 0.1rem 0 var(--flush),-0.1rem 0.1rem 0 var(--flush),0.1rem -0.1rem 0 var(--flush),-0.1rem -0.1rem 0 var(--flush);
     }
@@ -309,7 +310,8 @@ const GlobalStyles = createGlobalStyle`
       border-radius: 0.25em;
       background: var(--contrastLight);
       color: var(--contrastDark);
-      font-size: 0.9em;
+      font-family: "Fira Code", monospace;
+      font-size: 0.875em;
       font-weight: 400;
 
       code {
