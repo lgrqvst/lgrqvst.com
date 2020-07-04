@@ -2,9 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
-import kebabCase from "lodash/kebabCase"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFolderOpen } from "@fortawesome/free-solid-svg-icons"
+import Category from "./category"
+import Date from "./date"
 
 const PostList = ({ title, edges, context }) => {
   const posts = edges.map((post, i) => (
@@ -24,11 +23,9 @@ const PostList = ({ title, edges, context }) => {
         </Link>
       </h3>
       <aside>
-        {post.node.frontmatter.date} |{" "}
+        <Date date={post.node.frontmatter.date} /> |{" "}
         {post.node.frontmatter.categories.map((cat) => (
-          <Category key={cat} to={`/categories/${kebabCase(cat)}`}>
-            <FontAwesomeIcon icon={faFolderOpen} /> {cat}
-          </Category>
+          <Category key={cat} name={cat} showCount={false} />
         ))}
       </aside>
       {/* <p>{post.node.excerpt}</p> */}
@@ -77,11 +74,6 @@ const Article = styled.li`
     }
   }
 
-  aside {
-    font-family: "Rajdhani", sans-serif;
-    text-transform: uppercase;
-  }
-
   a {
     text-decoration: none;
   }
@@ -90,5 +82,3 @@ const Article = styled.li`
     max-width: 30em;
   }
 `
-
-const Category = styled(Link)``

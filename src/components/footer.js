@@ -28,6 +28,11 @@ const FooterElement = styled.footer`
   grid-area: footer;
 
   display: grid;
+  margin: 1rem 0 0;
+
+  @media (max-width: 40rem) {
+    margin: 0;
+  }
 
   ${gridColumns()}
 `
@@ -41,7 +46,7 @@ const Inner = styled.div`
 
   position: relative;
   border-top: 1rem solid transparent;
-  margin: 2rem 0 0 0;
+  margin: 0;
   padding: 1rem 0 2rem;
 
   &::before {
