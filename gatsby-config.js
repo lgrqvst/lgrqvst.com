@@ -116,6 +116,7 @@ module.exports = {
         verbose: true,
       },
     },
+    `gatsby-plugin-preact`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
