@@ -96,18 +96,22 @@ module.exports = {
             {
               family: "Rajdhani",
               variants: ["300", "400", "500", "600"],
+              strategy: "cdn",
             },
             {
               family: "Crimson Pro",
               variants: ["200", "200i"],
+              strategy: "cdn",
             },
             {
               family: "Ibarra Real Nova",
               variants: ["400", "700", "400i", "700i"],
+              strategy: "cdn",
             },
             {
               family: "Fira Code",
               variants: ["400"],
+              strategy: "cdn",
             },
           ],
         },
