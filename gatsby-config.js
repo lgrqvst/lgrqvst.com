@@ -89,14 +89,26 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-anchor-links`,
     {
-      resolve: `gatsby-plugin-web-font-loader`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        google: {
-          families: [
-            `Rajdhani:300,400,500,600`,
-            `Crimson Pro:200,200i`,
-            `Ibarra Real Nova:400,700,400i,700i`,
-            `Fira Code:400`,
+        fonts: {
+          google: [
+            {
+              family: "Rajdhani",
+              variants: ["300", "400", "500", "600"],
+            },
+            {
+              family: "Crimson Pro",
+              variants: ["200", "200i"],
+            },
+            {
+              family: "Ibarra Real Nova",
+              variants: ["400", "700", "400i", "700i"],
+            },
+            {
+              family: "Fira Code",
+              variants: ["400"],
+            },
           ],
         },
       },
