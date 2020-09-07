@@ -1,20 +1,19 @@
 import React from "react"
 import styled from "styled-components"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faCreativeCommons,
-  faCreativeCommonsBy,
-  faCreativeCommonsNc,
-  faCreativeCommonsSa,
-} from "@fortawesome/free-brands-svg-icons"
-import { faHeart } from "@fortawesome/free-solid-svg-icons"
+  FaCreativeCommons,
+  FaCreativeCommonsBy,
+  FaCreativeCommonsNc,
+  FaCreativeCommonsSa,
+  FaHeart,
+} from "react-icons/fa"
 
 const Copyright = () => {
   return (
     <CopyrightElement>
       <p>
         <span>
-          Made with <FontAwesomeIcon icon={faHeart} /> in Osaka.
+          Made with <FaHeart /> in Osaka.
         </span>
       </p>
 
@@ -24,10 +23,10 @@ const Copyright = () => {
           href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
           title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"
         >
-          <FontAwesomeIcon icon={faCreativeCommons} />
-          <FontAwesomeIcon icon={faCreativeCommonsBy} />
-          <FontAwesomeIcon icon={faCreativeCommonsNc} />
-          <FontAwesomeIcon icon={faCreativeCommonsSa} />
+          <FaCreativeCommons />
+          <FaCreativeCommonsBy />
+          <FaCreativeCommonsNc />
+          <FaCreativeCommonsSa />
         </a>
       </LicenseIcons>
 

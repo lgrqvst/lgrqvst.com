@@ -2,8 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import kebabCase from "lodash/kebabCase"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFolderOpen } from "@fortawesome/free-solid-svg-icons"
+import { FaFolderOpen } from "react-icons/fa"
 
 const Category = ({
   name,
@@ -14,8 +13,7 @@ const Category = ({
 }) => {
   return (
     <CategoryElement to={`/categories/${kebabCase(name)}`} {...props}>
-      {showIcon && <FontAwesomeIcon icon={faFolderOpen} />} {name}{" "}
-      {showCount && <>({count})</>}
+      {showIcon && <FaFolderOpen />} {name} {showCount && <>({count})</>}
     </CategoryElement>
   )
 }

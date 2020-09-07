@@ -1,53 +1,52 @@
 import React from "react"
 import styled from "styled-components"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faTwitter,
-  faInstagram,
-  faGithub,
-  faCodepen,
-  faArtstation,
-} from "@fortawesome/free-brands-svg-icons"
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
+  FaTwitter,
+  FaInstagram,
+  FaGithub,
+  FaCodepen,
+  FaArtstation,
+  FaPaperPlane,
+} from "react-icons/fa"
 
 const SocialMedia = () => {
   const socialMediaData = [
     {
       name: "Twitter",
       link: "https://twitter.com/lgrqvst",
-      icon: faTwitter,
+      icon: FaTwitter,
     },
     {
       name: "Instagram",
       link: "https://instagram.com/lgrqvst",
-      icon: faInstagram,
+      icon: FaInstagram,
     },
     {
       name: "GitHub",
       link: "https://github.com/lgrqvst",
-      icon: faGithub,
+      icon: FaGithub,
     },
     {
       name: "CodePen",
       link: "https://codepen.io/lgrqvst",
-      icon: faCodepen,
+      icon: FaCodepen,
     },
     {
       name: "ArtStation",
       link: "https://artstation.com/lgrqvst",
-      icon: faArtstation,
+      icon: FaArtstation,
     },
     {
       name: "hello@lgrqvst.com",
       link: "mailto:hello@lgrqvst.com",
-      icon: faPaperPlane,
+      icon: FaPaperPlane,
     },
   ]
 
   const socialMedia = socialMediaData.map((item) => (
     <li key={item.name}>
       <a href={item.link}>
-        <FontAwesomeIcon icon={item.icon} /> {item.name}
+        <item.icon /> {item.name}
       </a>
     </li>
   ))

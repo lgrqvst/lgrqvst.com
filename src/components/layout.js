@@ -3,13 +3,9 @@ import styled, { css, createGlobalStyle } from "styled-components"
 import "sanitize.css"
 import "sanitize.css/typography.css"
 import "sanitize.css/forms.css"
-import { config } from "@fortawesome/fontawesome-svg-core"
-import "@fortawesome/fontawesome-svg-core/styles.css"
 import { gridColumns } from "../styles"
 import Header from "./header"
 import Footer from "./footer"
-
-config.autoAddCss = false
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
