@@ -58,28 +58,28 @@ module.exports = {
         siteUrl: `https://lgrqvst.com`,
       },
     },
-    {
-      resolve: `gatsby-plugin-accessibilityjs`,
-      options: {
-        injectStyles: `
-        .accessibility-error {
-          box-shadow: 0 0 3px 1px #f00;
-          background-color: rgba(255, 0, 0, 0.25);
-          position: relative;
-        }
-        .accessibility-error:before {
-          content: "A11Y";
-          position: absolute;
-          top: 0;
-          left: 0;
-          color: #fff;
-          font-size: 10px;
-          background-color: rgba(255, 0, 0, 0.5);
-          transform: translateY(-100%);
-        }
-      `,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-accessibilityjs`,
+    //   options: {
+    //     injectStyles: `
+    //     .accessibility-error {
+    //       box-shadow: 0 0 3px 1px #f00;
+    //       background-color: rgba(255, 0, 0, 0.25);
+    //       position: relative;
+    //     }
+    //     .accessibility-error:before {
+    //       content: "A11Y";
+    //       position: absolute;
+    //       top: 0;
+    //       left: 0;
+    //       color: #fff;
+    //       font-size: 10px;
+    //       background-color: rgba(255, 0, 0, 0.5);
+    //       transform: translateY(-100%);
+    //     }
+    //   `,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-transition-link`,
       options: {
@@ -108,14 +108,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-polished`,
-    {
-      resolve: `gatsby-plugin-prettier-build`,
-      options: {
-        types: ["html"],
-        concurrency: 20,
-        verbose: true,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-prettier-build`,
+    //   options: {
+    //     types: ["html"],
+    //     concurrency: 20,
+    //     verbose: true,
+    //   },
+    // },
     `gatsby-plugin-preact`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
