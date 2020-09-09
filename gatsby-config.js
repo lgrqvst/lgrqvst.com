@@ -133,6 +133,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-preact`,
+    `gatsby-plugin-no-javascript`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
