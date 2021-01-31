@@ -3,6 +3,7 @@ import styled from "styled-components"
 import {
   FaTwitter,
   FaInstagram,
+  FaLinkedin,
   FaGithub,
   FaCodepen,
   FaArtstation,
@@ -20,6 +21,11 @@ const SocialMedia = () => {
       name: "Instagram",
       link: "https://instagram.com/lgrqvst",
       icon: FaInstagram,
+    },
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/johanlagerqvist/",
+      icon: FaLinkedin,
     },
     {
       name: "GitHub",
